@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: url(../img/rose-flower-pink-portrait.jpg) no-repeat center/ cover;
+
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: 'Gabriela', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 130%;
+}
+
+.content {
+    background-color: palevioletred;
+    display: inline block;
+    color: aliceblue;
+    padding: 50px;
+    border-radius: 200px 0px 300px 0px;
+    animation: shift 3s;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    transform: skew(10deg, 5deg);
+    animation: text-transform 1s alternate infinite linear;
+}
+
+.poem {
+    font-size: 30px;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(-100vm);
+    }
+
+
+    50% {
+        transform: scale(0.5) rotateY(180deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes text-transform {
+    100% {
+        transform: skew(10deg, 10deg);
+    }
+}
